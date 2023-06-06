@@ -18,7 +18,6 @@
     <ul>
         <li><a href="cadastro_agenda.html">Cadastrar</a></li>
         <li><a href="listar_agenda.php">Listar</a></li>
-        <li><a href="upload_agenda.php">Upload foto</a></li>
     </ul>
 </body>
 </html>

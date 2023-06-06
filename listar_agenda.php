@@ -37,6 +37,11 @@
             do{
                 echo "<tr>";
                 echo "<td>". $row['id_agenda'] ."</td>";
+                if($row['foto'] == ""){
+                    echo "<th></td>";
+                }else{  
+                echo "<td><img src='" . $row['foto'] . "' width='80' heigth='100'></td>";
+                }
                 echo "<td>". $row['nome'] ."</td>";
                 echo "<td>". $row['apelido'] ."</td>";
                 echo "<td>". $row['endereco'] ."</td>";
