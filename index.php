@@ -12,7 +12,12 @@
 </head>
 <body>
     <div>
-        
-    </div>
+        <h1>Agenda</h1>
+</div>
+    <hr>
+    <ul>
+        <li><a href="cadastro_agenda.html">Cadastrar</a></li>
+        <li><a href="listar_agenda.php">Listar</a></li>
+    </ul>
 </body>
 </html>
