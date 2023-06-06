@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
 
-    $slq = "DELETE FROM agenda WHERE id_agenda='". $_GET['id_agenda'] ."'";
+    $sql = "DELETE FROM agenda WHERE id_agenda='". $_GET['id_agenda'] ."'";
     $result = mysqli_query($con, $sql);
 
     if($result){

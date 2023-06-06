@@ -18,6 +18,7 @@
     <table align="center" border="1">
         <tr>
             <th>ID</th>
+            <th>Foto</th>
             <th>Nome</th>
             <th>Apelido</th>
             <th>Endereço</th>
@@ -32,6 +33,7 @@
             <th>Excluir</th>
         </tr>
         <?php
+            if(mysqli_num_rows($result)>0){
             do{
                 echo "<tr>";
                 echo "<td>". $row['id_agenda'] ."</td>";
@@ -47,8 +49,14 @@
                 echo "<td>". $row['dt_cadastro'] ."</td>";
                 echo "<td><a href='altera_agenda.php?id_agenda=". $row['id_agenda'] ."'>Alterar</a></td>";
                 echo "<td><a href='excluir_agenda.php?id_agenda=". $row['id_agenda'] ."'>Excluir</a></td>";
-                echo "</tr>";
-            }while($row = mysqli_fetch_array($result))
+                echo "</tr></div>";
+            }while($row = mysqli_fetch_array($result));
+        }else{
+            echo 
+            "<div>
+            Nenhuma registro encontrado.
+            </div>";
+        }
         ?>
         <a href="index.php">Voltar</a>
     </table>
